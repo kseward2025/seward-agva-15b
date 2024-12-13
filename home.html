@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="menu-layout">
+      <div class="menu-item"><a href="home.html">Home</a></div>
+      <div class="menu-item">
+        <a href="products.html">Products and Services</a>
+      </div>
+      <div class="menu-item"><a href="contactus.html">Contact Us</a></div>
+    </div>
+    <div class="main column">
+      <h2>Welcome to Seward Cattle Company</h2>
+      <div class="column-layout">
+        <div class="main-column"></div>
+      </div>
+    </div>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Grid Layout</title>
+    <style>
+      body {
+        background-color: beige;
+        font-family: Verdana, sans-serif;
+      }
+
+      .column-layout {
+        background-color: beige;
+        max-width: 800px;
+        margin: 40px auto 0 auto;
+        padding: 20px 40px;
+        line-height: 1.65;
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://cdn.glitch.global/1fa9dedc-88e8-4e18-b8c4-3566961174ef/Seward%20(1).png"
+    />
+    <div class="column-layout"></div>
+    <div class="sidebar-one"></div>
+    <h3>Homegrown Beef</h3>
+
+    <ul>
+      <li>Antibotic Free</li>
+      <li>Steriod Free</li>
+      <li>Pasture Raised</li>
+    </ul>
+
+    <div class="main-column"></div>
+    <h2>Beef your way</h2>
+    <p>
+      Located in the heartland of America, our family-owned and operated
+      grain-finished beef company prides itself on delivering premium quality
+      beef products from pasture to plate. With generations of ranching
+      expertise, we are committed to providing wholesome, nutritious meat that
+      brings families together around the dinner table.
+    </p>
+    <div class="grid"></div>
+    <div class="call-outs-container">
+      <div class="call-out">
+        <h4>Free Delivery</h4>
+        <p>On any $100 purchase</p>
+
+        <div>
+          <a href="home.html" class="btn">Learn More</a>
+        </div>
+      </div>
+      <div class="call-out">
+        <h4>Buy 10 get 1 FREE</h4>
+        <p>Buy 10 pounds, get one free</p>
+
+        <div>
+          <a href="home.html" class="btn">Learn More</a>
+        </div>
+      </div>
+      <div class="call-out">
+        <h4>$5 OFF</h4>
+        <p>Any purchase of $75</p>
+
+        <div>
+          <a href="home.html" class="btn">Learn More</a>
+        </div>
+      </div>
+      <div style="text-align: center">
+        <button id="hidebutton" onclick="hideOffers()">Hide Offers</button>
+      </div>
+
+      <script>
+        function hideads() {
+          var x = document.getElementByID("specialoffers");
+          var y = document.getElementByID("hidebutton");
+          x.style.display = "none";
+          y.style.display = "none";
+        }
+  
+      </script>
+    </div>
+  </body>
+</html>
